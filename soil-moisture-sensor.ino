@@ -11,8 +11,8 @@ int humidityPercentage = 0;
 char moistureSensorPinValueMessage[20]; 
 char humidityPercentageMessage[20]; 
 
-const int dry = 614;
-const int wet = 294;
+const int dry = 614; // Measure the sensor value in the dry state. The value might be different from mine
+const int wet = 294; // Measure the sensor value in the wet state. The value might be different from mine
 
 void setup() {
   lcd.begin(16, 2);
